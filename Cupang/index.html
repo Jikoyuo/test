@@ -7,7 +7,7 @@
   <title>Ikan Cupang</title>
   <style>
     .jarak-antarteks {
-      margin-top: 25px;
+      margin-top: 15px;
       margin-bottom: 25px;
     }
 
@@ -16,10 +16,19 @@
       margin-right: 10px;
     }
 
-    img {
-      width: 200px;
-      height: auto;
+    .custom-image {
+      width: 1000px;
+      height: 200px;
       display: block;
+    }
+
+    .button-custom {
+       border: none;
+      /* Hilangkan batas tombol jika tidak diinginkan */
+      border-radius: 5px;
+      /* Tambahkan sudut bulat jika diinginkan */
+
+      margin-top: -450px;
     }
   </style>
 
@@ -27,13 +36,13 @@
 
 <body>
 
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+  <button class="w3-button w3-display-left button-custom" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right button-custom" onclick="plusDivs(+1)">&#10095;</button>
 
-  <img class="mySlides" src="halfmoon.jpg">
-  <img class="mySlides" src="veiltail.jpeg">
-  <img class="mySlides" src="plakat.jpeg">
-  <img class="mySlides" src="veiltail.jpeg">
+  <img class="mySlides custom-image" src="halfmoon.jpg">
+  <img class="mySlides custom-image" src="veiltail.jpeg">
+  <img class="mySlides custom-image" src="plakat.jpeg">
+  <img class="mySlides custom-image" src="veiltail.jpeg">
 
 
 
@@ -139,39 +148,39 @@
 
 
 
-        <script>
-          var slideIndex = 1;
-          showDivs(slideIndex);
-    
-          function plusDivs(n) {
-            showDivs(slideIndex += n);
-          }
-    
-          function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-          }
-        </script>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
 
-<script>
-  function w3_open() {
-    document.getElementById("main").style.marginLeft = "25%";
-    document.getElementById("mySidebar").style.width = "25%";
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("openNav").style.display = 'none';
-  }
-  function w3_close() {
-    document.getElementById("main").style.marginLeft = "0%";
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("openNav").style.display = "inline-block";
-  }
-</script>
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
 
 
 
