@@ -20,9 +20,11 @@
 
     /* setting ukuran dari photo  */
     .custom-image {
-      width: 1000px;
+      max-width: 100%;
+      width: 2000px;
       height: 200px;
       display: block;
+      margin: auto;
     }
 
     /* styling CSS untuk button, menempatkan tombol menggunakan margin */
@@ -34,12 +36,27 @@
       /* Tambahkan sudut bulat jika diinginkan */
       margin-top: -450px;
     }
+
+    /* .image-corner {
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    } */
+    .background{
+        background-color: blanchedalmond;
+        padding: 20px;
+    }
   </style>
 
 </head>
 
 <body>
 
+  <div class="background">
+
+  
   <!-- button slide kiri -->
   <button class="w3-button w3-display-left button-custom" onclick="plusDivs(-1)">&#10094;</button>
   <!-- button slide kanan -->
@@ -87,10 +104,10 @@
     <div class="w3-container">
       <h2>Beberapa Jenis Ikan Cupang:</h2>
     </div>
-    
+
     <ul>
-      <li style="color: red;">
-        <p class="jarak-antarteks">
+      <li style="color: black;">
+        <p class="jarak-antarteks" style="color: red">
           <strong>Halfmoon:</strong>
         </p>
         <p>Ikan Cupang Halfmoon dikenal karena bentuk ekornya yang berbentuk setengah bulan. Mereka memiliki sirip yang
@@ -196,6 +213,8 @@
 
 
 
+    
+</div>
 </body>
 
 </html>
