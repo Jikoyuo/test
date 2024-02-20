@@ -6,28 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ikan Cupang</title>
   <style>
+    /* style teks untuk memberi jarak atas dan bawah teks*/
     .jarak-antarteks {
       margin-top: 15px;
       margin-bottom: 25px;
     }
 
+    /*  */
     .jarak-kiri {
       margin-left: 25px;
       margin-right: 10px;
     }
 
+    /* setting ukuran dari photo  */
     .custom-image {
       width: 1000px;
       height: 200px;
       display: block;
     }
 
+    /* styling CSS untuk button, menempatkan tombol menggunakan margin */
     .button-custom {
-       border: none;
+      border: none;
+
       /* Hilangkan batas tombol jika tidak diinginkan */
       border-radius: 5px;
       /* Tambahkan sudut bulat jika diinginkan */
-
       margin-top: -450px;
     }
   </style>
@@ -36,9 +40,12 @@
 
 <body>
 
+  <!-- button slide kiri -->
   <button class="w3-button w3-display-left button-custom" onclick="plusDivs(-1)">&#10094;</button>
+  <!-- button slide kanan -->
   <button class="w3-button w3-display-right button-custom" onclick="plusDivs(+1)">&#10095;</button>
 
+  <!-- image untuk phot slide -->
   <img class="mySlides custom-image" src="halfmoon.jpg">
   <img class="mySlides custom-image" src="veiltail.jpeg">
   <img class="mySlides custom-image" src="plakat.jpeg">
@@ -46,6 +53,7 @@
 
 
 
+  <!-- pembuatan side bar -->
   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
     <a href="#" class="w3-bar-item w3-button">1</a>
@@ -55,6 +63,7 @@
 
   <div id="main">
 
+    <!-- code untuk sidebar sett -->
     <div class="w3-teal">
       <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
@@ -65,8 +74,9 @@
 
 
 
-    <h1>Ikan Cupang</h1>
-
+    <div class="w3-container">
+      <h1>Ikan Cupang</h1>
+    </div>
 
     <p><strong>Ikan cupang</strong> adalah jenis ikan air tawar yang populer di kalangan penggemar ikan hias. Ikan ini
       berasal dari wilayah Asia Tenggara, terutama dari perairan rawa, sungai, dan sawah. Ikan cupang dikenal karena
@@ -74,7 +84,10 @@
 
     <p>Warna ikan cupang sangat bervariasi, termasuk biru, merah, hijau, dan lainnya.</p>
 
-    <h2>Beberapa Jenis Ikan Cupang:</h2>
+    <div class="w3-container">
+      <h2>Beberapa Jenis Ikan Cupang:</h2>
+    </div>
+    
     <ul>
       <li style="color: red;">
         <p class="jarak-antarteks">
@@ -121,24 +134,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-      <body>
 
-        <li style="color: cadetblue;">
-          <p class="jarak-antarteks">
-            <strong>Veiltail:</strong>
-          </p>
+      <li style="color: cadetblue;">
+        <p class="jarak-antarteks">
+          <strong>Veiltail:</strong>
+        </p>
 
-          <p>Ikan Cupang Veiltail memiliki sirip ekor yang panjang dan menggantung, menciptakan tampilan yang anggun.
-            Sirip mereka biasanya lebih panjang daripada varietas lain, dan mereka dikenal karena keindahan siripnya
-            yang
-            memanjang.</p>
-          <div class="w3-card-4" style="width:20%">
-            <img src="veiltail.jpeg" alt="Alps" style="width:100%">
-            <div class="w3-container w3-center">
-              <p>Cupang Veiltail</p>
-            </div>
+        <p>Ikan Cupang Veiltail memiliki sirip ekor yang panjang dan menggantung, menciptakan tampilan yang anggun.
+          Sirip mereka biasanya lebih panjang daripada varietas lain, dan mereka dikenal karena keindahan siripnya
+          yang
+          memanjang.</p>
+        <div class="w3-card-4" style="width:20%">
+          <img src="veiltail.jpeg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Cupang Veiltail</p>
           </div>
-        </li>
+        </div>
+      </li>
     </ul>
 
     <h2>Informasi Lebih Lanjut:</h2>
